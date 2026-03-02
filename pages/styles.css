@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #363a2f;
-    color:#fff
+    color:#fff;
+    scrollbar-width: thin;
 }
 .header {
     color: #fff;
@@ -113,6 +114,7 @@ carousel {
     position:absolute;
     top:65%;
     left: 0;
+    overflow: hidden;
     /* animation: comeup 1s ease-out;*/
 }
 .abblur {
@@ -158,4 +160,51 @@ carousel {
     top: calc(100% + 10px);
     position: relative;
     content: "";
+}
+.finalcard {
+    background-color: #ababab6e;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-self: center;
+    padding:10px;
+    width: 630px;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    display:flex;
+    flex-direction: column;
+    z-index: 0;
+}
+carouselup {
+    width: 300px;
+    height: 100%;
+    background-color: #3333334f;
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 15px 15px;
+    margin-top: -780px;
+    z-index: -5;
+    display:flex !important;
+    flex-direction: column !important;
+    overflow: hidden;
+}
+.carouselitemup {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    animation: scrollup 15s linear infinite;
+}
+@keyframes scrollup {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-1800px); }
+}
+.footer {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff65;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 20px;
 }
