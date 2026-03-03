@@ -14,8 +14,8 @@
     <p style="margin:0; padding:0;">I go by @TheEpicStudent online, though.</p>
     <br>
     <nav>
-        <button>About Me</button>
-        <button>Projects</button>
+        <button id="aboutme" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Me</button>
+        <button id="projects" onclick="document.getElementById('pro').scrollIntoView({behavior: 'smooth'})">Projects</button>
         <!--<button>Contact</button>-->
     </nav>
     <br>
@@ -62,7 +62,7 @@
     <br>
     <div class="lazyhorizontalstack">
     <div class="container" style="width:50%">
-    <h2>About Me</h2>
+    <h2 id="about">About Me</h2>
     <br>
     
     <p>Hi, I'm Caleb! I do programming, music, and photography!</p>
@@ -113,8 +113,10 @@
     <br>
     <br>
     </div>
-    <div class="container">
-        <h2>Projects</h2>
+    <div class="containerimage"></div>
+    <div class="container2">
+
+        <h2 id="pro">Projects</h2>
         <div class="lazyhorizontalstack">
             <div class="projectcard">
                 <h4>Wallpaper Creator</h4>
@@ -157,7 +159,7 @@
     <br>
     <br>
     <br>
-    <div class="container">
+    <div class="container2">
     <h2>Contact Me</h2>
     <div class="finalcard">
         <p>Feel free to contact me on Slack, or email me at <a style="margin:0;padding:0;" href="mailto:z2dw3cgb@calebk.anonaddy.me">this email address</a>.</p>
@@ -165,6 +167,7 @@
     </div>
     <br>
     <br>
+    </div>
     <div class="footer">
         <p>Made by TheEpicStudent</p>
     </div>
