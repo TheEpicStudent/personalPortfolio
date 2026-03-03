@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
 });
 
 
-
 server.listen(PORT, () => {
     console.log(`Server is on http://localhost:${PORT}`);
     console.log('-----------------------------------');

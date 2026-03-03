@@ -60,7 +60,7 @@ a {
     justify-content: center;
 }
 button {
-    background-color: #508b35;
+    background-color: #354e35;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -233,4 +233,8 @@ carouselup {
     top: 0;
     left: 0;
     filter:blur(50px)
+}
+biggerp {
+    font-size: 1.5em;
+    font-weight: bold;
 }
